@@ -3,29 +3,17 @@
 require_once 'db-connection.php';
 require_once 'functions.php';
 $db = getDb();
-//$result = getSneakers($db);
 $products = getProducts($db);
 $productsToDisplay = displayAllProducts($products);
 
-
-
-
-function getProducts($db)
-{
-    $query = $db->prepare("SELECT `name`, `year-released`, `color-way`, `size`, `price`, `images` FROM `sneakers`;");
-    $query->execute();
-    return $query->fetchAll();
-}
-
-
-
-
 ?>
 
-<!DOCTYPE html>
+
 <html lang="en-GB">
     <head>
     <title>Nike Collection</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="normalize.css" type="text/css" />
     </head>
     <body>
         <header>
@@ -35,7 +23,6 @@ function getProducts($db)
                 <?php
                 echo $productsToDisplay;
                  ?>
-
         </main>
-       </body>
-    </html>
+    </body>
+</html>

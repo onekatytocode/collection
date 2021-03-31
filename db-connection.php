@@ -2,7 +2,7 @@
 
 /**
  * @return PDO
- *
+ * gaining access to the nike database
  */
 function getDb():PDO
     {
