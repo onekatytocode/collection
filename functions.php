@@ -32,9 +32,9 @@ function getProducts($db): array
 function displayProduct(array $product): string
 {
     $result = '<div class="product"><img src="' . $product['images'] . '" alt="nikeshoe" width=550 height=360; />';
-    $result .= '<p><h1>' . $product['name'] . "</h1><p>" . "<h4>YEAR RELEASED: " . $product['year-released'] . "</h4>"
-        . "<h4>COLOR-WAY: " . $product['color-way'] . "</h4>" . "<h4>AVAILABLE SIZES: " . $product['size'] . "</h4><br>"
-        . "<h4>PRICE: £" . $product['price'] . '</p></div>';
+    $result .= '<p><h1>' . $product['name'] . "</h1><p>" . "<h4>YEAR RELEASED: " . $product['year-released'] . "</h4><br>"
+        . "<h4>COLOR-WAY: " . $product['color-way'] . "</h4></p>" . "<h4>AVAILABLE SIZES: " . $product['size'] . "</h4><br>"
+        . "<h4>PRICE: £" . $product['price'] . '</h4></div>';
     return $result;
 }
 

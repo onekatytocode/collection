@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.33)
 # Database: katy-collection
-# Generation Time: 2021-03-30 14:31:14 +0000
+# Generation Time: 2021-03-31 14:57:31 +0000
 # ************************************************************
 
 
@@ -33,7 +33,7 @@ CREATE TABLE `sneakers` (
   `color-way` varchar(200) DEFAULT NULL,
   `size` varchar(10) DEFAULT '',
   `images` blob,
-  `price` int(11) DEFAULT NULL,
+  `price` int(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
