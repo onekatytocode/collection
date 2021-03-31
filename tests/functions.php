@@ -6,13 +6,13 @@ use PHPUnit\Framework\TestCase;
 
 class Functions extends TestCase
 {
-    public function testSuccessDisplayProduct(): string
+    public function testSuccessDisplayProduct()
     {
         //expected result of the test
 
-        $expected = '<div class="product"><img src="/test.jpg" alt="shoe" />';
-        $expected .= "<h1>test name</h1><p>" . "<h3>Year Released: 2000</h3><br>"
-            . "<h3>Color-way: green / black</h3></p>" . "<h3>Available Sizes: 4</h3><br>" . "<h3>Price: £100</div>";
+        $expected = '<div class="product"><img src="/test.jpg" alt="nikeshoe" width=550 height=360; />';
+        $expected .= "<p><h1>test name</h1><p>" . "<h4>YEAR RELEASED: 2000</h4><br>"
+            . "<h4>COLOR-WAY: green / black</h4></p>" . "<h4>AVAILABLE SIZES: 4</h4><br>" . "<h4>PRICE: £100</h4></div>";
 
 
         //Inputs to get the expected result
