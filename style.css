@@ -1,11 +1,6 @@
 body {
-    background-color: black;
     background-image: url("shoecoll.jpeg");
     color: white;
-}
-
-div {
-    background-color: black;
 }
 
 main {
@@ -28,11 +23,13 @@ h1 {
     text-decoration: underline;
 }
 
+.product {
+    background-color: #7bdea4;
+}
+
 footer {
     color: black;
     font-size: 25px;
     padding: 10px;
     text-align: center;
 }
-
-
