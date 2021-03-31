@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1, h4 {
+    text-align: center;
+}
+
+h1 {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/*change image size, hard coding, media screen sizes*/
+
+@media screen and (max-width: 1280px) {
+    main {
+
+    }
+}
+@media screen and (min-width: 1024px);
