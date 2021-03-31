@@ -2,7 +2,7 @@
 
 /**
  * @return PDO
- * gaining access to the nike database
+ * gaining access to the katy-collection database
  */
 function getDb():PDO
     {

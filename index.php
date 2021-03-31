@@ -8,7 +8,6 @@ $productsToDisplay = displayAllProducts($products);
 
 ?>
 
-
 <html lang="en-GB">
     <head>
     <title>Nike Collection</title>
@@ -17,12 +16,14 @@ $productsToDisplay = displayAllProducts($products);
     </head>
     <body>
         <header>
-            <h1>Nike collection</h1>
+            <h1 class="top">Nike collection</h1>
+            <br>
         </header>
         <main>
                 <?php
                 echo $productsToDisplay;
                  ?>
         </main>
+    <footer>&#169; KatyEvans 2021</footer>
     </body>
 </html>
