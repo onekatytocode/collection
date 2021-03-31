@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class Functions extends TestCase
 {
-    public function testSuccessDisplayProduct()
+    public function testSuccessDisplayProduct(): string
     {
         //expected result of the test
 
@@ -30,7 +30,7 @@ class Functions extends TestCase
         $this->assertEquals($expected, $case);
     }
 
-    public function testMalformedDisplayProduct()
+    public function testMalformedDisplayProduct(): int
     {
         $input = 4;
         $this->expectException(TypeError::class);
